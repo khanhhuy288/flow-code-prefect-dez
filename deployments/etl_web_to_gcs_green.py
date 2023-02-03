@@ -63,10 +63,3 @@ def etl_parent_flow(months: list[int] = [1, 2],
 ):
     for month in months:
         etl_web_to_gcs(year, month, color)
-
-
-if __name__ == "__main__":
-    color = "green"
-    months = [1]
-    year = 2020
-    etl_parent_flow(months, year, color)
